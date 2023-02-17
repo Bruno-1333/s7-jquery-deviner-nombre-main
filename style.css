@@ -1,0 +1,15 @@
+/* modifier la class nombres pour fair le css avev cinq colunnes */
+.nombre {
+    width: 1%;
+    float: left;
+    padding: 0 10px;
+    margin: 0 0 10px 0;
+    border: 1px solid #ccc;
+    background: #eee;
+    text-align: center;
+    font-size: 10px ;
+    font-weight: bold;
+    color: yellowgreen;
+    line-height: 2em;
+}
+
