@@ -1,27 +1,48 @@
 
 let aleatoire = Math.ceil(Math.random()*100); //le nombre à
+
 $(function (){
-    nombreChoisi();
-    $("#soumettre").click(nombreChoisi)
+    soumettre();
+    essai();
+    nouvellePartie();
 })
-function nombreChoisi () {
+function soumettre (){
+    let nombre = $(".nombre").val();
+    if (nombre > aleatoire){
+        $("#reponse").text("C'est moins");
+    }
+    else if (nombre < aleatoire){
+        $("#reponse").text("C'est plus");
+    }
+    else{
+        $("#reponse").text("Bravo");
+    }
 
-    var contenu = $(".nombre").val()
-            if (aleatoire > this) {
-                console.log("Le valeur est plus haut")
-                $(".nombre").attr("disable", true);
-            else
-                if (aleatoire < this) {
-                    console.log("Le valeur est plus bas")
-                    $(".nombre").attr("disable", true)
-                    esle
-                    {
-                        console.log("le nombre est: " + aleatoire);
-                    }
-                }
+}
+function essai (){
+    let nombre = $(".nombre").val();
+    $("#essai").append(nombre + " ");
 
-            }
-    };
+}
+function nouvellePartie (){
+    aleatoire = Math.ceil(Math.random()*100);
+    $(".nombre").val("");
+    $("#reponse").text("");
+    $("#essai").text("");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
