@@ -1,16 +1,36 @@
 /* modifier la class nombres pour fair le css avev cinq colunnes */
+.nombres {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 50px;
+    grid-gap: 10px;
+}
+
 .nombre {
-    width: 7%;
-    float: left;
-    padding: 0 10px;
-    margin: 0 0 10px 0;
-    border: 1px solid #ccc;
-    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-size: 10px ;
-    font-weight: bold;
-    color: yellowgreen;
-    line-height: 2em;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.row {
+    display : flex;
+}
+.nombres{
+    padding-top: 20px;
+}
+.numGagnant{
+    background-color: chartreuse;
+}
+.invisible{
+    display: none;
+}
+#new-game-btn{
+    margin-top: 2rem;
+    padding:1rem ;
+
+
 }
 
 
